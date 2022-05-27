@@ -1,3 +1,5 @@
+/* Gebleven bij 3.*/
+
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -14,11 +16,27 @@
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* ------------------------------- 2. Typography ----------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto&display=swap');
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
+
+:root {
+    --purple-color: #5722CD;
+    --blue-color: #4845E4;
+    --pink-color: #ED4385;
+    --black-text-color: #0C0C0C;
+    --lightpurple-floating-words-color: #F2F0FF;
+    --lightgrey-exception-bg-color: #F3F6F9;
+    --grey-exception-service-tile-color: #7A7A7A;
+}
 
 /* --------------- 3.2 Other --------------------------- */
 
@@ -26,6 +44,47 @@
 
 /* --------------- 4.1 Header ------------------------- */
 
-/* --------------- 4.2 Introduction ------------------- */
+/*Note to self: Merriweather uit google fonts lijkt niet te werken. Later aanpassen nodig (stap 1.2 uit opdracht)*/
+.header-container {
+    border: 2px solid darkorange;
+}
 
+.header-item {
+    border: 2px dotted darkorange;
+}
+
+.nav-container {
+    border: 2px solid black;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    border: 2px dotted black;
+    list-style-type: none;
+}
+
+li {
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+}
+/* --------------- 4.2 Introduction ------------------- */
+.main-container {
+    border: 2px solid dodgerblue;
+}
+
+.main-item {
+    border: 2px dotted dodgerblue;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
 /* ------------------------------- 5. Media Queries -------------------------------- */
